@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>AZ Lyrics</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/styles_index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
 </head>
 
@@ -45,8 +45,11 @@
 
         <div id="right">
             <button>SUBMIT A SONG</button>
-            <input type="text" placeholder="Search for an artist or song">
-            <button id="search">Search</button>
+            <div id="input">
+                <input type="text" placeholder="Search for an artist or song">
+                <a id="search" href="search.html"><img src="assets/images/search.svg" /></a>
+            </div>
+
         </div>
 
     </div>
@@ -54,70 +57,131 @@
     <div class="title">
         <h1>AZ LYRICS</h1>
         <h2>WHERE ALL SEARCHES END</h2>
+        <div id="icons">
+            <img src="assets/images/facebook.png" />
+            <img src="assets/images/twitter.png" />
+            <img src="assets/images/youtube.png" />
+        </div>
     </div>
 
-    <h2 id="hot">Hottest Songs</h4>
+    <div class="sort">
+        <div id="top">
+            <h2>TOP SONGS</h2>
+            <img id="down_arrow" src="assets/images/down_arrow.svg" />
+        </div>
+        <div id="categories">
+            <div id="today">
+                <h3>TODAY</h3>
+            </div>
+            <h3>THIS MONTH</h3>
+            <h3>ALL TIME</h3>
+        </div>
+    </div>
 
-        <div id="container">
-            <div class="row">
-                <div class="choice">
-                    <h2>Artist</h2>
-                    <h3>Song Title</h3>
-                </div>
-                <div class="choice">
-                    <h2>Artist</h2>
-                    <h3>Song Title</h3>
-                </div>
-                <div class="choice">
-                    <h2>Artist</h2>
-                    <h3>Song Title</h3>
+
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div id="first">
+                    <div class="choice">
+                        <h2>Artist</h2>
+                        <h3>Song Title</h3>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="choice">
-                    <h2>Artist</h2>
-                    <h3>Song Title</h3>
-                </div>
-                <div class="choice">
-                    <h2>Artist</h2>
-                    <h3>Song Title</h3>
-                </div>
-                <div class="choice">
-                    <h2>Artist</h2>
-                    <h3>Song Title</h3>
+            <div class="box">
+                <div id="second">
+                    <div class="choice">
+                        <h2>Artist</h2>
+                        <h3>Song Title</h3>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="choice">
-                    <h2>Artist</h2>
-                    <h3>Song Title</h3>
-                </div>
-                <div class="choice">
-                    <h2>Artist</h2>
-                    <h3>Song Title</h3>
-                </div>
-                <div class="choice">
-                    <h2>Artist</h2>
-                    <h3>Song Title</h3>
+            <div class="box">
+                <div id="third">
+                    <div class="choice">
+                        <h2>Artist</h2>
+                        <h3>Song Title</h3>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <button>show more</button>
-
-        <div id="footer">
-            <div class="footer-row">
-                <p>Sountracks</p>
-                <p>Contact Us</p>
-                <p>Advertise Here</p>
-                <p>Privacy Policy</p>
-                <p>DMCA Policy Us</p>
+        <div class="row">
+            <div class="box">
+                <div id="fourth">
+                    <div class="choice">
+                        <h2>Artist</h2>
+                        <h3>Song Title</h3>
+                    </div>
+                </div>
             </div>
-            <p>Copyright © 2000-2018 AZLyrics.com</p>
-            <p>All lyrics are property and copyright of their owners.
+            <div class="box">
+                <div id="fifth">
+                    <div class="choice">
+                        <h2>Artist</h2>
+                        <h3>Song Title</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div id="sixth">
+                    <div class="choice">
+                        <h2>Artist</h2>
+                        <h3>Song Title</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="box">
+                <div id="seventh">
+                    <div class="choice">
+                        <h2>Artist</h2>
+                        <h3>Song Title</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div id="eigth">
+                    <div class="choice">
+                        <h2>Artist</h2>
+                        <h3>Song Title</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div id="ninth">
+                    <div class="choice">
+                        <h2>Artist</h2>
+                        <h3>Song Title</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="show">
+        <button>SHOW MORE</button>
+    </div>
+
+
+    <div class="footer">
+        <div id="footer-row">
+            <p>Sountracks</p>
+            <p>Contact Us</p>
+            <p>Advertise Here</p>
+            <p>Privacy Policy</p>
+            <p>DMCA Policy Us</p>
+        </div>
+        <div id="bottom">
+            <p id="copyright">© 2000-2018 AZLyrics.com</p>
+            <p id="ownership">All lyrics are property and copyright of their owners.
                 All lyrics provided for educational purposes and personal use only.</p>
-
         </div>
+
+
+    </div>
 </body>
 
 </html>
