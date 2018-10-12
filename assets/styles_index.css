@@ -146,6 +146,11 @@
   font-weight: 100;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #first {
   background: url(images/lucid_dreams.jpg);
   background-size: 100%;

@@ -23,6 +23,8 @@
   padding: 0px;
   margin: 8px;
   letter-spacing: 32px;
+  margin-left: 0px;
+  margin-right: -32px;
   color: #020202;
   text-align: center;
 }
@@ -107,16 +109,160 @@
   width: 130px;
   height: 130px;
   margin: 0px 16px 8px 16px;
+  cursor: pointer;
 }
 
 .album h3 {
   margin: 0px;
   font-size: 12px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .album p {
   margin: 0px;
   font-size: 12px;
   font-weight: 100;
+  cursor: pointer;
+}
+
+/* -----song list----- */
+
+#sort {
+  width: 600px;
+  margin: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#sort h2 {
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 4px;
+}
+
+#sort-button button {
+  position: relative;
+  font-size: 20px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px 8px 16px;
+  font-weight: bold;
+  transition: 250ms;
+}
+
+#sort-button button:hover {
+  cursor: pointer;
+  background: #adadad;
+  transition: 250ms;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+}
+.down {
+  transform: rotate(45deg);
+  position: relative;
+  bottom: 3px;
+  left: 4px;
+}
+
+.songs {
+  width: 600px;
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.songs img {
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+}
+
+.songs h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0px 16px 0px 8px;
+  cursor: pointer;
+}
+
+.songs h2 {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 0px;
+}
+
+.songs h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px 16px;
+}
+
+.songs p {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px 8px;
+}
+
+.song_album {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.choice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f2f2f2;
+  margin: 4px 0px 4px 0px;
+  padding: 4px 0px;
+  transition: 250ms;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: #adadad;
+  transition: 250ms;
+}
+
+.song-button button {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  text-align: end;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px 8px 8px;
+  margin: 8px 0px;
+  transition: 250ms;
+}
+
+.song-button button:hover {
+  cursor: pointer;
+  transition: 250ms;
+  background: #adadad;
+}
+
+.right {
+  transform: rotate(-45deg);
+  position: relative;
+  left: 3px;
+  padding: 4px;
 }
