@@ -1,0 +1,122 @@
+.title {
+  background: url(images/hellogif.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 640px;
+}
+
+.subtitle {
+  width: 100%;
+  position: relative;
+  top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0px;
+}
+
+.subtitle h1 {
+  font-size: 64px;
+  font-weight: 700;
+  padding: 0px;
+  margin: 8px;
+  letter-spacing: 32px;
+  color: #020202;
+  text-align: center;
+}
+
+.subtitle img {
+  width: 350px;
+  height: 350px;
+  border-radius: 300px;
+}
+
+.container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  font-weight: 100;
+  font-size: 20px;
+  margin: 32px 64px 64px 64px;
+}
+
+.container h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 40px 64px 32px 64px;
+}
+
+.container b:hover {
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+#about {
+  width: 600px;
+  height: 500px;
+  background: #f2f2f2;
+  margin: 32px;
+}
+
+#about p {
+  letter-spacing: 1px;
+}
+
+#about b {
+  letter-spacing: 4px;
+}
+
+#albums {
+  width: 600px;
+  height: 500px;
+  background: #f2f2f2;
+  margin: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.album-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0px 64px 32px 64px;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#albums img {
+  width: 130px;
+  height: 130px;
+  margin: 0px 16px 8px 16px;
+}
+
+.album h3 {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.album p {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 100;
+}
