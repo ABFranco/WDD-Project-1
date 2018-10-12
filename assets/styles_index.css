@@ -17,6 +17,7 @@ body {
   position: fixed;
   padding: 0px;
   margin: 0px;
+  z-index: 10;
 }
 
 .header #left {
@@ -114,8 +115,10 @@ body {
   left: 15%;
 }
 
+/* ------ end of navbar ----- */
+
 .title {
-  background: url(images/drakegif.gif); /*#1e2849;*/
+  background: url(images/drakegif.gif);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -225,6 +228,7 @@ body {
   margin: 25px;
   transition: 250ms;
   cursor: pointer;
+  background: #000;
 }
 
 .box:hover {
@@ -240,17 +244,24 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  background: rgba(25, 25, 25, 0.5);
+  /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;*/
+  transition: 250ms;
+}
+
+.choice:hover {
+  background: rgba(25, 25, 25, 0.75);
+  transition: 250ms;
 }
 
 .choice h2 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 400;
 }
 
 .choice h3 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 100;
 }
 
@@ -275,22 +286,22 @@ body {
 }
 
 #fifth {
-  background: url(images/19.jpg);
+  background: url(images/trip.jpg);
   background-size: 100%;
 }
 
 #sixth {
-  background: url(images/21.jpg);
+  background: url(images/american_teen.jpeg);
   background-size: 100%;
 }
 
 #seventh {
-  background: url(images/25.jpg);
+  background: url(images/black_panther.jpeg);
   background-size: 100%;
 }
 
 #eigth {
-  background: url(images/royalhall.jpg);
+  background: url(images/hello.png);
   background-size: 100%;
 }
 
@@ -331,13 +342,17 @@ body {
 }
 
 #footer-row {
-  width: 700px;
+  width: 800px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-weight: bold;
   font-size: 18px;
+}
+
+.footer #footer-row p:hover {
+  cursor: pointer;
 }
 
 .footer #bottom {
