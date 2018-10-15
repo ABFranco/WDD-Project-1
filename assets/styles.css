@@ -2,10 +2,12 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", sans-serif;
+  min-width: 1080px;
 }
 
 .header {
   width: 100%;
+  min-width: 980px;
   height: 72px;
   background-color: rgba(25, 25, 25, 0.75);
   display: flex;

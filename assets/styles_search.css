@@ -1,5 +1,5 @@
 .title {
-  background: url(images/hellogif.gif);
+  background: url(images/adelegif1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -10,21 +10,208 @@
   justify-content: center;
   align-items: center;
   color: white;
-  margin: 0px;
 }
 
 .title h1 {
   font-size: 144px;
   font-weight: 700;
-  padding: 0px;
-  margin: 8px;
+  padding: 20px;
+  margin: 20px;
   letter-spacing: 32px;
 }
 
 .title h2 {
+  font-size: 28px;
+  padding: 70px;
+  font-weight: 400;
+  letter-spacing: 8px;
+  margin: 8px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+#albums {
+  width: 600px;
+  height: 500px;
+  background: #f2f2f2;
+  margin: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+}
+
+.albumrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 64px 32px 64px;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.album img {
+  width: 400px;
+  height: 400px;
+  margin: 0px 16px 8px 16px;
+  cursor: pointer;
+}
+
+.album h3 {
+  margin: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.album p {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.title h4 {
   font-size: 32px;
   padding: 0px;
   font-weight: 100;
   letter-spacing: 8px;
   margin: 8px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+/* sort row */
+#sort {
+  width: 600px;
+  margin: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#sort h2 {
+  padding: 0px;
+  margin: 0px;
+  letter-spacing: 4px;
+  font-size: 40px;
+}
+
+#sort-button button {
+  position: relative;
+  font-size: 20px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px 8px 16px;
+  font-weight: bold;
+  transition: 250ms;
+}
+
+#sort-button button:hover {
+  cursor: pointer;
+  background: #adadad;
+  transition: 250ms;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+}
+.down {
+  transform: rotate(45deg);
+  position: relative;
+  bottom: 3px;
+  left: 4px;
+}
+
+/* song list */
+
+.songs {
+  margin: 8px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.songs img {
+  height: 96px;
+  width: 96px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.songs h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px 16px;
+}
+
+.song-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.song {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 600px;
+  margin: 8px 32px;
+  transition: 250ms;
+  cursor: pointer;
+}
+
+.song:hover {
+  transition: 250ms;
+  background: #adadad;
+}
+
+.song-button button {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  text-align: end;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px 8px 8px;
+  margin: 8px 0px;
+  transition: 250ms;
+}
+
+.song-button button:hover {
+  cursor: pointer;
+  transition: 250ms;
+  background: #adadad;
+}
+
+.right {
+  transform: rotate(-45deg);
+  position: relative;
+  left: 3px;
+  padding: 4px;
 }
