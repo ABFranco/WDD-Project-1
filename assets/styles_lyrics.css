@@ -1,1 +1,174 @@
-/* blank for now :o */
+.title {
+  background: url(images/hellogif2.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 640px;
+  margin-bottom: 250px;
+}
+
+.subtitle {
+  width: 100%;
+  position: relative;
+  top: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.subtitle h1 {
+  font-size: 64px;
+  font-weight: 700;
+  padding: 0px;
+  margin: 8px;
+  letter-spacing: 10px;
+  margin-left: 0px;
+  margin-right: -32px;
+  color: #020202;
+  text-align: center;
+}
+
+.subtitle h2 {
+  font-size: 40px;
+  font-weight: 350;
+  padding: 0px;
+  margin: 8px;
+  letter-spacing: 10px;
+  margin-left: 0px;
+  margin-right: -32px;
+  color: #020202;
+  text-align: center;
+}
+
+.subtitle h3 {
+  font-size: 24px;
+  font-weight: 350;
+  padding: 0px;
+  margin: 8px;
+  letter-spacing: 1px;
+  margin-left: 0px;
+  margin-right: -32px;
+  color: #020202;
+  text-align: center;
+}
+
+.subtitle img {
+  width: 350px;
+  height: 350px;
+  border-radius: 300px;
+}
+
+/* columns */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#lyrics {
+  width: 600px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f2f2f2;
+  padding: 32px 64px 32px 64px;
+  font-size: 20px;
+  margin: 32px 64px 64px 64px;
+}
+
+#lyrics h2 {
+  letter-spacing: 1px;
+}
+
+/* other song suggestions */
+
+#other-songs {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0px;
+}
+
+.choice {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 530px;
+  margin: 8px 0px;
+  transition: 250ms;
+  cursor: pointer;
+}
+
+.choice img {
+  width: 130px;
+  height: 130px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.choice .description {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.choice h2 {
+  margin: 4px 0px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.choice h4 {
+  margin: 4px 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.choice h3 {
+  margin: 4px 0px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/* button */
+
+#show {
+  text-align: center;
+  margin: 24px;
+}
+
+#show button {
+  background: none;
+  border: 4px solid black;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+  transition: 250ms;
+}
+
+#show button:hover {
+  background: lightgray;
+  transition: 250ms;
+}
